@@ -6,10 +6,8 @@ import java.util.List;
 import java.util.Objects;
 
 public final class LottoTicket {
-    private static final int REQUIRED_SIZE = 6;
 
-    private final List<LottoNumber> numbers;
-
+    private final List<LottoNumber> numbers; 
     private LottoTicket(List<LottoNumber> numbers) {
         List<LottoNumber> sorted = new ArrayList<>(numbers);
         Collections.sort(sorted);
