@@ -55,7 +55,7 @@ public final class Money {
 
     private void validateNonNegative(long value) {
         if (value < 0) {
-            throw new IllegalArgumentException("[ERROR] 금액은 음수가 될 수 없습니다.");
+            throw new IllegalArgumentException("[ERROR] 구입 금액은 0 이상이어야합니다.");
         }
     }
 
