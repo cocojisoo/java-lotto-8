@@ -33,7 +33,10 @@ public enum Rank {
             return FIRST;
         }
         if (matchCount == 5) {
-            return bonusMatched ? SECOND : THIRD;
+            if(bonusMatched) {
+                return SECOND;
+            }
+            return THIRD;
         }
         if (matchCount == 4) {
             return FOURTH;
